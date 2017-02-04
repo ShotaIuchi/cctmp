@@ -16,9 +16,10 @@ target_link_libraries(plane
 
 #
 # state_machine
+include_directories(proj_state_machine/include)
 project(state_machine)
 add_executable(state_machine
-  src/proj_state_machine/main.cc
+  proj_state_machine/src/main.cc
   )
 target_link_libraries(state_machine
   boost_system

@@ -1,7 +1,7 @@
 #ifndef __STATE_MACHINE_IMPLE_HH__
 #define __STATE_MACHINE_IMPLE_HH__
 
-#include "proj_state_machine/state_machine.hh"
+#include "state_machine.hh"
 
 namespace state_machine {
 

@@ -3,9 +3,9 @@
 #define FUSION_MAX_VECTOR_SIZE 30
 
 #include <iostream>
-#include "proj_state_machine/state_machine.hh"
-#include "proj_state_machine/state_machine_imple.hh"
-#include "proj_state_machine/big_state_machine.hh"
+#include "state_machine.hh"
+#include "state_machine_imple.hh"
+#include "big_state_machine.hh"
 
 int main(int argc, char* argv[])
 {
