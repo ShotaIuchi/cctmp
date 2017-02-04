@@ -1,5 +1,5 @@
 #include <iostream>
-#include "proj_plane/xxx.hh"
+#include "xxx.hh"
 
 int main(int argc, char* argv[])
 {
