@@ -24,3 +24,16 @@ add_executable(state_machine
 target_link_libraries(state_machine
   boost_system
   )
+
+#
+# tcp echo server
+include_directories(proj_tcp_echo_server/include)
+project(tcp_echo_server)
+add_executable(tcp_echo_server
+  proj_tcp_echo_server/src/main.cc
+  )
+target_link_libraries(tcp_echo_server
+  boost_system
+  boost_thread
+  )
+
