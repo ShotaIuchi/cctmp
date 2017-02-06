@@ -37,3 +37,16 @@ target_link_libraries(tcp_echo_server
   boost_thread
   )
 
+#
+# tcp ssl server
+include_directories(proj_tcp_ssl_server/include)
+project(tcp_ssl_server)
+add_executable(tcp_ssl_server
+  proj_tcp_ssl_server/src/main.cc
+  )
+target_link_libraries(tcp_ssl_server
+  ssl
+  crypto
+  boost_system
+  boost_thread
+  )
