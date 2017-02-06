@@ -50,3 +50,18 @@ target_link_libraries(tcp_ssl_server
   boost_system
   boost_thread
   )
+
+#
+# tcp ssl client
+include_directories(proj_tcp_ssl_client/include)
+project(tcp_ssl_client)
+add_executable(tcp_ssl_client
+  proj_tcp_ssl_client/src/main.cc
+  )
+target_link_libraries(tcp_ssl_client
+  ssl
+  crypto
+  pthread
+  boost_system
+  boost_thread
+  )
