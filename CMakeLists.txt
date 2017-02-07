@@ -65,3 +65,14 @@ target_link_libraries(tcp_ssl_client
   boost_system
   boost_thread
   )
+
+#
+# udp echo server
+include_directories(proj_udp_echo_server/include)
+project(udp_echo_server)
+add_executable(udp_echo_server
+  proj_udp_echo_server/src/main.cc
+  )
+target_link_libraries(udp_echo_server
+  boost_system
+  )
